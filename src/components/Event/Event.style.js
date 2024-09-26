@@ -48,3 +48,16 @@ color: #99582a
 
 `
 
+export const EventImgThumb=styled.div`
+height: 180px;
+width: 320px;
+background-color: #99582a;
+border-radius: 12px;
+ overflow: hidden;
+`
+
+export const EventImg=styled.img`
+width: 100%,
+height: 100%,
+object-fit: cover
+`

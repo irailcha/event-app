@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-
-export const BodyContainer = styled.div`
+export const MainContainer = styled.div`
   position: relative;
-  padding: 30px;
- 
+  padding-top: 50px;
 `;

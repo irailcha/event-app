@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Formik, Field  } from 'formik';
-import {FormStyle, FieldStyle, LabelStyle, FormContainer, PageTitle, TextMessage, BtnStyle} from "./RegistrationForm.style.js"
+import {FormStyle, FieldStyle, LabelStyle, FormContainer, PageTitle, TextMessage, ButtonStyle} from "./RegistrationForm.style.js"
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -74,7 +74,7 @@ catch (error) {
               Found myself
             </label>
           </div>
-          <BtnStyle type="submit">Submit</BtnStyle>
+          <ButtonStyle type="submit">Submit</ButtonStyle>
          </FormStyle>}
 
      </Formik>

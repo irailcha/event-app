@@ -1,14 +1,16 @@
 
 import EventList from "../../components/EventList/EventList";
-import {PageTitle} from './EventsPage.style.js'
+import EventSorting from "../../components/EventSorting/EventSorting.js";
 
 
 
-const EventsPage=({events})=>{
+
+const EventsPage=({events, setSortedEvents})=>{
 
 
     return(
-        <><PageTitle>Events</PageTitle>
+        <>
+        <EventSorting events={events} setSortedEvents={setSortedEvents}/>
         <EventList events={events} /></>
     )
 }

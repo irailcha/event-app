@@ -1,24 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import axios from "axios";
+
 import './Participants.style.js';
 import { ParticipantsContainer, ParticipantCard, NoParticipantsMessage } from './Participants.style.js';
 
 
-const Participants = ({ eventId }) => {
-  const [participants, setParticipants] = useState([]);
+const Participants = ({ participants }) => {
 
-  useEffect(() => {
-    const getParticipants = async () => {
-      try {
-        const { data } = await axios.get(`/events/${eventId}/participants`); 
-        console.log(data);
-        setParticipants(data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getParticipants();
-  }, [eventId]);
 
   return (
     <>
